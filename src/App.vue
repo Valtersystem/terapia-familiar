@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
+import NavBar from '../src/components/Navbar.vue';
+import ContentFooter from '../src/components/ContentFooter.vue';
 </script>
 
 <template>
-  <div>
-    <a href="https://vitejs.dev" target="_blank">
-      <img src="/vite.svg" class="logo w-6" alt="Vite logo" />
-    </a>
-    <a href="https://vuejs.org/" target="_blank">
-      <img src="./assets/vue.svg" class="logo vue" alt="Vue logo" />
-    </a>
+  <div class="max-w-screen-3xl my-0 mx-auto">
+    <div class="min-h-screen relative">
+      <NavBar />
+      <!-- <router-link to="/">Home</router-link> -->
+      <main>
+        <router-view />
+      </main>
+      <footer class="bg-white rounded-2xl mt-12">
+        <ContentFooter />
+      </footer>
+    </div>
   </div>
-  <HelloWorld msg="Vite + Vue" />
 </template>
-

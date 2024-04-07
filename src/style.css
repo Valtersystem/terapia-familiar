@@ -1,3 +1,27 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+html, body {
+  @apply scroll-smooth bg-gray-100;
+}
+
+.title-section {
+  @apply md:text-2xl text-xl uppercase font-semibold mb-4 text-kashmir-blue-800;
+}
+
+.nav-link {
+  @apply block py-2 px-3 text-kashmir-blue-600 rounded;
+}
+
+.container {
+  @apply mx-auto max-w-screen-2xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-10;
+}
+
+.homePageBook {
+  @apply rounded-lg flex items-center justify-center;
+}
+
+.homePageBookImage {
+  @apply w-48 rounded-lg shadow-3xl hover:shadow-2xl cursor-pointer;
+}
