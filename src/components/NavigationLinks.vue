@@ -35,14 +35,14 @@ import Facebook from '../components/Facebook.vue';
       <a href="#" class="nav-link">Contactos</a>
     </li>
 
-    <li class="min:[889px]:hidden flex">
+    <!-- <li class="min:[889px]:hidden flex">
       <a href="#" target="_blank" rel="" class="nav-link">
         <Instagram />
       </a>
       <a href="#" target="_blank" rel="" class="nav-link">
         <Facebook />
       </a>
-    </li>
+    </li> -->
   
 
 

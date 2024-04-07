@@ -1,4 +1,9 @@
 <script setup lang="ts">
+
+import 'swiper/less';
+import 'swiper/less/navigation';
+import 'swiper/less/pagination';
+
 import NavBar from '../src/components/Navbar.vue';
 import ContentFooter from '../src/components/ContentFooter.vue';
 </script>

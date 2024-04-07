@@ -25,7 +25,7 @@ import NavigationLinks from '../components/NavigationLinks.vue';
             <div class="hidden w-full md:block md:w-auto" id="navbar-multi-level">
                 <NavigationLinks />
             </div>
-            <div class="hidden md:hidden w-full gap-1 md:w-auto">
+            <div class="flex w-full gap-1 md:w-auto">
                 <a href="#" target="_blank" rel="">
                     <Instagram />
                 </a>
