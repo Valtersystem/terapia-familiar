@@ -1,38 +1,37 @@
 <script setup lang="ts">
-import Instagram from '../components/Instagram.vue';
-import Facebook from '../components/Facebook.vue';
+
 </script>
 <template>
   <ul
     class="flex flex-col justify-center font-medium p-4 md:p-0 mt-4 border border-gray-100 rounded-lg md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0">
 
     <li>
-      <a href="#" class="nav-link">Home </a>
+     <router-link class="nav-link" to="/">Home</router-link> 
     </li>
 
     <li>
-      <a href="#" class="nav-link">Terapeutas
-        <span
-          class="absolute start-full top-1/2 ms-4 -translate-y-1/2 rounded bg-gray-900 px-2 py-1.5 text-xs font-medium text-white opacity-0 group-hover:opacity-100">
-          Ambience
-        </span>
-      </a>
+      <!-- <a href="#" class="nav-link">Terapeutas</a> -->
+      <router-link class="nav-link" to="terapeutas">Terapeutas</router-link> 
     </li>
 
     <li>
-      <a href="#" class="nav-link">Formações</a>
+      <!-- <a href="#" class="nav-link">Formações</a> -->
+      <router-link class="nav-link" to="formacoes">Formações</router-link> 
     </li>
 
     <li>
-      <a href="#" class="nav-link">Biblioteca</a>
+      <!-- <a href="#" class="nav-link">Biblioteca</a> -->
+      <router-link class="nav-link" to="biblioteca">Biblioteca</router-link> 
     </li>
 
     <li>
-      <a href="#" class="nav-link">Eventos</a>
+      <!-- <a href="#" class="nav-link">Eventos</a> -->
+      <router-link class="nav-link" to="eventos">Eventos</router-link> 
     </li>
 
     <li>
-      <a href="#" class="nav-link">Contactos</a>
+      <!-- <a href="#" class="nav-link">Contactos</a> -->
+      <router-link class="nav-link" to="contactos">Contactos</router-link> 
     </li>
 
     <!-- <li class="min:[889px]:hidden flex">
@@ -44,8 +43,6 @@ import Facebook from '../components/Facebook.vue';
       </a>
     </li> -->
   
-
-
 
   </ul>
 </template>
