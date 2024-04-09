@@ -1,19 +1,12 @@
 import { createWebHistory, createRouter } from 'vue-router'
 
-import Home from '../views/Home.vue';
-import Terapeutas from '../views/Terapeutas.vue';
-import Formacoes from '../views/Formacoes.vue';
-import Biblioteca from '../views/Biblioteca.vue';
-import Eventos from '../views/Eventos.vue';
-import Contactos from '../views/Contactos.vue';
-
 const routes = [
-  { path: '/', component: Home },
-  { path: '/terapeutas', component: Terapeutas },
-  { path: '/formacoes', component: Formacoes },
-  { path: '/biblioteca', component: Biblioteca },
-  { path: '/eventos', component: Eventos },
-  { path: '/contactos', component: Contactos },
+  { path: '/', component: () => import ('../views/Home.vue')},
+  { path: '/terapeutas', component: () => import ('../views/Terapeutas.vue')},
+  { path: '/formacoes', component: () => import ('../views/Formacoes.vue')},
+  { path: '/biblioteca', component: () => import ('../views/Biblioteca.vue')},
+  { path: '/eventos', component: () => import ('../views/Eventos.vue')},
+  { path: '/contactos', component: () => import ('../views/Contactos.vue')},
 ]
 
 const router = createRouter({

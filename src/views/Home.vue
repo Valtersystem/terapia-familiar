@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import SlideBanner from '../components/SlideBanner.vue';
 import SectionFormacoes from '../components/SectionFormacoes.vue';
-import InfoCards from '../components/InfoCards.vue';
+import SectionCardInfo from '../components/SectionCardInfo.vue';
 import BannerTop from '../components/BannerTop.vue';
 import BooksHomepage from '../components/BooksHomepage.vue';
 </script>
@@ -19,23 +19,7 @@ import BooksHomepage from '../components/BooksHomepage.vue';
   <SlideBanner class="" />
 
   <div class="bg-gray-50 rounded-2xl pb-12">
-    <div class="grid grid-cols-1 gap-4 lg:grid-cols-3 lg:gap-8 container">
-      <div class="">
-        <InfoCards title="O que é Terapia Familiar ?"
-          textInfo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem omnis atque culpa repellendus."
-          link="/" linkImg="https://res.cloudinary.com/dtf70ty3b/image/upload/v1710116821/terapia/info1.jpg" />
-      </div>
-      <div class="">
-        <InfoCards title="Seja um Associado APORTEFAC"
-          textInfo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem omnis atque culpa repellendus."
-          link="/" linkImg="https://res.cloudinary.com/dtf70ty3b/image/upload/v1710116821/terapia/info2.jpg" />
-      </div>
-      <div class="">
-        <InfoCards title="Formação em Terapia Familiar"
-          textInfo=" Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate, praesentium voluptatem omnis atque culpa repellendus."
-          link="/" linkImg="https://res.cloudinary.com/dtf70ty3b/image/upload/v1710116821/terapia/info3.jpg" />
-      </div>
-    </div>
+    <SectionCardInfo class="" />
   </div>
 
   <div class="mt-12">
