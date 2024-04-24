@@ -16,7 +16,7 @@ import ContentFooter from '../src/components/ContentFooter.vue';
       <main>
         <router-view />
       </main>
-      <footer class="bg-white rounded-2xl mt-12">
+      <footer class="bg-gray-50 rounded-2xl mt-12">
         <ContentFooter />
       </footer>
     </div>
